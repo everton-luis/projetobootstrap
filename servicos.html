@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>One Page</title>
+        <!-- CSS Bootstrap !-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<script type="text/javascript" src="js/jquery-min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- CSS Personalizada !-->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <!-- Fonte par Icones !-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		
+
+		<script type="text/javascript">
+			/// some script
+			
+			// jquery ready start
+			$(document).ready(function() {
+				// jQuery code
+			
+				///////////////// fixed menu on scroll for desctop
+				if ($(window).width() > 992) {
+					
+					var navbar_height =  $('.navbar').outerHeight();
+			
+					$(window).scroll(function(){  
+						if ($(this).scrollTop() > 150) {
+							 
+							 $('#navbar_top').addClass("fixed-top");
+							 $('#navbar_top').addClass("bg-secondary");
+							 $("#navbar_top").attr('style',  'height:70px');
+							 $('#section1').attr("css", { backgroundColor: "gray" });
+							 
+			
+							 
+						}else{
+							$('#navbar_top').removeClass("fixed-top");
+							$('.navbar-wrap').css('height', 'auto');
+							$('#navbar_top').removeClass("bg-secondary");
+						}   
+					});
+				} // end if
+			
+				
+			}); // jquery end
+			</script>
+			
+			<style type="text/css">
+			
+			.fixed-top.navbar{ padding:0px;  }
+			
+			
+			</style>
+
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        
+		<!-- Topo !-->
+		<div id="home" class="container-fluid bg-topo-dark">
+			<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
+				<div class="container">
+				<a class="navbar-brand" href="#">
+					Logo
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="main_nav">
+					
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link text-light font-weight-bold scroll-page" href="#home" id="section1">Home</a></li>
+						<li class="nav-item"><a class="nav-link text-light font-weight-bold scroll-page" href="#servicos">Serviços</a></li>
+						<li class="nav-item"><a class="nav-link text-light font-weight-bold scroll-page" href="#ondeestamos">Onde Nós Estamos</a></li>
+						<li class="nav-item"><a class="nav-link text-light font-weight-bold scroll-page" href="#contato">Contato</a></li>
+			
+					</ul>
+			
+				</div> <!-- navbar-collapse.// -->
+				</div> <!-- container.// -->
+			</nav>
+		</div>
+	
+	
+			<div class="container" style="max-width: 720px">
+	
+				
+							
+						<div id="teste1" style="padding-top:70px;padding-bottom:70px">
+							<h1>Section 1</h1>
+							<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+							<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+							<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+							<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+							<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+						</div>
+	
+						<div id="teste2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+							<h1>Section 2</h1>
+							<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+							<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+						  </div>
+	
+				</section>
+				
+            </div><!-- container //  -->
+            
+            <hr/>
+            <!-- Serviços -->
+            <div id="servicos" class="container-fluid bg-servicos">
+                <div class="mt-2 py-4">
+                    <section class="container">
+                        <header class="col-12">
+                            <h2 class="text-center text-light">Serviços
+                                <span class="underline"></span>
+                            </h2>
+                        </header>
+                        <div class="row py-4">
+                            <div class="col-6">
+                                <div class="icone-servicos">
+                                    <div class="icon">
+                                        <i class="fas fa-desktop"></i>
+                                    </div>
+                                    <div class="detalhes-servicos">
+                                        <p class="text-center text-light mt-2">Formatação e Reparo de Notebooks</p>
+                                    </div>
+								</div>
+                            </div>
+								
+							<div class="col-6">
+								<div class="icone-servicos">
+									<div class="icon">
+										<i class="fas fa-microchip"></i>
+									</div>
+									<div class="detalhes-servicos">
+										<p class="text-center text-light mt-2">Desmontagem e Limpeza de Notebooks</p>
+									</div>
+								</div>
+							</div>
+
+                            
+						</div>
+						
+                    </section>
+                </div>
+            </div>
+	
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+
+
+        <!-- Js Bootstrap !-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<!-- Latest compiled and minified Bootstrap JavaScript -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<!-- Popper -->
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+		integrity = "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+		crossorigin = "anonymous">
+	 </script>
+    </body>
+
+</html>
+
+
+

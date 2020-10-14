@@ -1,0 +1,123 @@
+/* Configurações do topo */
+.bg-topo-dark{
+	padding: 5px;
+	height: 90px;
+	background-color: black;
+}
+
+
+nav .nav-link.active{
+	border-bottom: 2px solid currentColor;
+	display: inline-block;
+	
+}
+
+
+/* Configurações de Serviço */
+.bg-servicos{
+	padding: 80px;
+	background: linear-gradient(131.26deg,#000000 30%, #778899 100%);
+}
+
+.icone-servicos{
+	text-align: center;
+}
+
+.icone-servicos .icon i{
+	font-size: 50px;
+	color: white;
+}
+
+.detalhes-servicos{
+	margin-top: 10px;
+	border: 1px solid black;
+	background-color: #0000FF;
+	color: black;
+	border-radius: 30px;
+	padding: 5px;
+}
+
+/* Seção Notebook Home */
+.bg-notebookhome{
+	padding: 80px;
+	background-image: url(../img/bg.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.fatos{
+	text-align: center;
+	color: white;
+}
+
+.fatos .icon i{
+	font-size: 50px;
+	color: #fff;
+}
+
+.fatos h3{
+	font-size: 35px;
+	color: #fff;
+	margin-bottom: 5px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.fatos h4{
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+/* Seção Clientes */
+
+.clientes-detalhes{
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.clientes-detalhes p{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 15px;
+	color: black;
+}
+
+.clientes-detalhes img{
+	border: 1px solid black;
+	border-radius: 80px;
+}
+
+.clientes-detalhes h6{
+	color: darkblue;
+	font-size: 30px;
+}
+
+/* Seção Onde Encontrar */
+
+.localizacao iframe{
+	text-align: center;
+	margin-left: 70px;
+}
+
+/* Seção Contato */
+
+.bg-contato{
+	background-color: #F6F6F6;
+}
+
+
+
+/* Confugrações Gerais */
+.underline{
+	content: '';
+	border-top: 2px solid darkblue;
+	width: 70px;
+	display: block;
+	margin-bottom: 8px;
+	margin: 0 auto;
+}
+
+

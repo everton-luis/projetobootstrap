@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Notebook Home Store</title>
+        <!-- CSS Bootstrap !-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<script type="text/javascript" src="js/jquery-min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- CSS Personalizada !-->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <!-- Fonte par Icones !-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		
+
+		<script type="text/javascript">
+			/// some script
+			
+			// jquery ready start
+			$(document).ready(function() {
+				// jQuery code
+			
+				///////////////// fixed menu on scroll for desctop
+				if ($(window).width() > 992) {
+					
+					var navbar_height =  $('.navbar').outerHeight();
+			
+					$(window).scroll(function(){  
+						if ($(this).scrollTop() > 150) {
+							 
+							 $('#navbar_top').addClass("fixed-top");
+							 $('#navbar_top').addClass("bg-secondary");
+							 $("#navbar_top").attr('style',  'height:70px');
+							 $('#section1').attr("css", { backgroundColor: "gray" });
+							 
+			
+							 
+						}else{
+							$('#navbar_top').removeClass("fixed-top");
+							$('.navbar-wrap').css('height', 'auto');
+							$('#navbar_top').removeClass("bg-secondary");
+						}   
+					});
+				} // end if
+			
+				
+			}); // jquery end
+			</script>
+
+			
+			<style type="text/css">
+			
+			.fixed-top.navbar{ padding:0px;  }
+			
+			
+			</style>
+
+    </head>
+    <body>
+
+        
+        <h1>Teste</h1>
+        
+        <!-- Seção de Clientes !-->
+        <div class="container-fluid bg-clientes">
+            <div class="my-2 py-4">
+                <section class="container">
+
+                    <header class="col-12">
+                        <h2 class="text-center">O que dizem nossos Clientes
+                            <span class="underline"></span>
+                        </h2>
+                    </header>
+                    <div class="row py-4">
+                        <div class="col-4">
+                            <div class="clientes-detalhes">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus viverra vestibulum. Mauris mi nisl, ultrices eleifend leo sit amet, convallis rutrum dui. Nulla rutrum vitae nulla et feugiat. Pellentesque sit amet malesuada risus. Praesent ante tortor, lobortis ac cursus in, efficitur nec ligula. Aliquam dapibus dui efficitur odio pellentesque, vel hendrerit magna bibendum. Donec porttitor sit amet risus pretium porta. Morbi pellentesque ex et sem sollicitudin, non pretium nunc maximus. Nullam bibendum felis in auctor imperdiet.
+                                </p>
+                                <img src="img/cliente1.jpg" height="120">
+                                <p>
+                                    <h6>Maria</h6>
+                                </p>
+                                <p>
+                                    Engenheira
+                                </p>
+                            </div>
+                           
+                        </div>
+
+                        <div class="col-4">
+                            <div class="clientes-detalhes">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus viverra vestibulum. Mauris mi nisl, ultrices eleifend leo sit amet, convallis rutrum dui. Nulla rutrum vitae nulla et feugiat. Pellentesque sit amet malesuada risus. Praesent ante tortor, lobortis ac cursus in, efficitur nec ligula. Aliquam dapibus dui efficitur odio pellentesque, vel hendrerit magna bibendum. Donec porttitor sit amet risus pretium porta. Morbi pellentesque ex et sem sollicitudin, non pretium nunc maximus. Nullam bibendum felis in auctor imperdiet.
+                                </p>
+                                <img src="img/cliente2.jpg" height="120">
+                                <p>
+                                    <h6>Ana</h6>
+                                </p>
+                                <p>
+                                    Farmacêutica
+                                </p>
+                            </div>
+                           
+                        </div>
+
+                        <div class="col-4">
+                            <div class="clientes-detalhes">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus viverra vestibulum. Mauris mi nisl, ultrices eleifend leo sit amet, convallis rutrum dui. Nulla rutrum vitae nulla et feugiat. Pellentesque sit amet malesuada risus. Praesent ante tortor, lobortis ac cursus in, efficitur nec ligula. Aliquam dapibus dui efficitur odio pellentesque, vel hendrerit magna bibendum. Donec porttitor sit amet risus pretium porta. Morbi pellentesque ex et sem sollicitudin, non pretium nunc maximus. Nullam bibendum felis in auctor imperdiet.
+                                </p>
+                                <img src="img/cliente3.jpg" height="120">
+                                <p>
+                                    <h6>João</h6>
+                                </p>
+                                <p>
+                                    Desenvolvedor Software
+                                </p>
+                            </div>
+                           
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+        <!-- Js Bootstrap !-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<!-- Latest compiled and minified Bootstrap JavaScript -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<!-- Popper -->
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+		integrity = "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+		crossorigin = "anonymous">
+		 </script>
+		 <script type="text/javascript">
+			$('.carousel').carousel({
+				interval: 2500
+			})
+		</script>
+		 
+    </body>
+
+</html>
+
+
+

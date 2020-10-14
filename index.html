@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Notebook Home Store</title>
+        <!-- CSS Bootstrap !-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<script type="text/javascript" src="js/jquery-min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- CSS Personalizada !-->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <!-- Fonte par Icones !-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		
+
+		<script type="text/javascript">
+			/// some script
+			
+			// jquery ready start
+			$(document).ready(function() {
+				// jQuery code
+			
+				///////////////// fixed menu on scroll for desctop
+				if ($(window).width() > 992) {
+					
+					var navbar_height =  $('.navbar').outerHeight();
+			
+					$(window).scroll(function(){  
+						if ($(this).scrollTop() > 150) {
+							 
+							 $('#navbar_top').addClass("fixed-top");
+							 $('#navbar_top').addClass("bg-secondary");
+							 $("#navbar_top").attr('style',  'height:80px');
+							 $('#section1').attr("css", { backgroundColor: "gray" });
+							 
+			
+							 
+						}else{
+							$('#navbar_top').removeClass("fixed-top");
+							$('.navbar-wrap').css('height', 'auto');
+							$('#navbar_top').removeClass("bg-secondary");
+						}   
+					});
+				} // end if
+			
+				
+			}); // jquery end
+			</script>
+
+			
+			<style type="text/css">
+			
+			.fixed-top.navbar{ padding:0px;  }
+			
+			
+			</style>
+
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        
+		<!-- Topo !-->
+		<div id="home" class="container-fluid bg-topo-dark">
+			<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark">
+				<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="img/Logo/logo2.png" height="75">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="main_nav">
+					
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link text-light font-weight-bold scroll-page" href="#home" id="section1">Home</a></li>
+						<li class="nav-item"><a class="nav-link text-light font-weight-bold scroll-page" href="#servicos">Serviços</a></li>
+						<li class="nav-item"><a class="nav-link text-light font-weight-bold scroll-page" href="#notebookhomestore">Notebook Home Store</a></li>
+						<li class="nav-item"><a class="nav-link text-light font-weight-bold scroll-page" href="#clientes">Clientes</a></li>
+						<li class="nav-item"><a class="nav-link text-light font-weight-bold scroll-page" href="#ondeencontrar">Onde Nós Encontrar</a></li>
+						<li class="nav-item"><a class="nav-link text-light font-weight-bold scroll-page" href="#contato">Contato</a></li>
+			
+					</ul>
+			
+				</div> <!-- navbar-collapse.// -->
+				</div> <!-- container.// -->
+			</nav>
+		</div>
+
+
+		<!-- SlideShow !-->	
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/slide1.jpg" alt="Primeiro Slide" height="450">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Soluções em reparos para Notebook</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide2.jpg" alt="Segundo Slide" height="450">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Soluções em desmontagem e limpeza de Notebook</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide3.jpg" alt="Terceiro Slide" height="450">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Soluções em formatação e instalação de Windows e Linux</h5>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+	
+	
+		<!-- Seção Serviços -->
+		<div id="servicos" class="container-fluid bg-servicos">
+			<section class="container">
+				<header class="col-12">
+					<h2 class="text-center text-light">Serviços
+						<span class="underline"></span>
+					</h2>
+				</header>
+				<div class="row py-4">
+					<div class="col-6">
+						<div class="icone-servicos">
+							<div class="icon">
+								<i class="fas fa-desktop"></i>
+							</div>
+							<div class="detalhes-servicos">
+								<p class="text-center text-light mt-2">Formatação e Reparo de Notebooks</p>
+							</div>
+						</div>
+					</div>
+							
+					<div class="col-6">
+						<div class="icone-servicos">
+							<div class="icon">
+								<i class="fas fa-microchip"></i>
+							</div>
+							<div class="detalhes-servicos">
+								<p class="text-center text-light mt-2">Desmontagem e Limpeza de Notebooks</p>
+							</div>
+						</div>
+					</div>
+
+						
+				</div>
+					
+			</section>
+		
+		</div>
+
+	
+		<!-- Seção Notebook Home Store !-->
+		<div id="notebookhomestore" class="container-fluid bg-notebookhome">
+			<div class="py-4">
+				<section class="container">
+					<header class="col-12">
+						<h2 class="text-center text-light">Notebook Home Store
+							<span class="underline"></span>
+						</h2>
+					</header>
+					<div class="row py-2">
+						<div class="col-4">
+							<div class="fatos">
+								<div class="icon">
+									<i class="fa fa-users"></i>
+								</div>
+								<div class="fatos-contador">
+									<h3>+ <span class="contar">1200</span></h3>
+									<h4>Clientes Atendidos</h4>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="fatos">
+								<div class="icon">
+									<i class="fas fa-laptop"></i>
+								</div>
+								<div class="fatos-contador">
+									<h3>+ <span class="contar">+2100</span></h3>
+									<h4>Notebooks Reparados</h4>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-4">
+							<div class="fatos">
+								<div class="icon">
+									<i class="fa fa-star"></i>
+								</div>
+								<div class="fatos-contador">
+									<h3><span class="contar">9.8</span></h3>
+									<h4>Média de Avaliação</h4>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<!-- Seção de Clientes !-->
+        <div id="clientes" class="container-fluid bg-clientes">
+            <div class="my-2 py-4">
+                <section class="container">
+
+                    <header class="col-12">
+                        <h2 class="text-center">O que dizem nossos Clientes
+                            <span class="underline"></span>
+                        </h2>
+                    </header>
+                    <div class="row py-4">
+                        <div class="col-4">
+                            <div class="clientes-detalhes">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus viverra vestibulum. Mauris mi nisl, ultrices eleifend leo sit amet, convallis rutrum dui. Nulla rutrum vitae nulla et feugiat. Pellentesque sit amet malesuada risus. Praesent ante tortor, lobortis ac cursus in, efficitur nec ligula. Aliquam dapibus dui efficitur odio pellentesque, vel hendrerit magna bibendum. Donec porttitor sit amet risus pretium porta. Morbi pellentesque ex et sem sollicitudin, non pretium nunc maximus. Nullam bibendum felis in auctor imperdiet.
+                                </p>
+                                <img src="img/cliente1.jpg" height="120">
+                                <p>
+                                    <h6>Maria</h6>
+                                </p>
+                                <p>
+                                    Engenheira
+                                </p>
+                            </div>
+                           
+                        </div>
+
+                        <div class="col-4">
+                            <div class="clientes-detalhes">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus viverra vestibulum. Mauris mi nisl, ultrices eleifend leo sit amet, convallis rutrum dui. Nulla rutrum vitae nulla et feugiat. Pellentesque sit amet malesuada risus. Praesent ante tortor, lobortis ac cursus in, efficitur nec ligula. Aliquam dapibus dui efficitur odio pellentesque, vel hendrerit magna bibendum. Donec porttitor sit amet risus pretium porta. Morbi pellentesque ex et sem sollicitudin, non pretium nunc maximus. Nullam bibendum felis in auctor imperdiet.
+                                </p>
+                                <img src="img/cliente2.jpg" height="120">
+                                <p>
+                                    <h6>Ana</h6>
+                                </p>
+                                <p>
+                                    Farmacêutica
+                                </p>
+                            </div>
+                           
+                        </div>
+
+                        <div class="col-4">
+                            <div class="clientes-detalhes">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus viverra vestibulum. Mauris mi nisl, ultrices eleifend leo sit amet, convallis rutrum dui. Nulla rutrum vitae nulla et feugiat. Pellentesque sit amet malesuada risus. Praesent ante tortor, lobortis ac cursus in, efficitur nec ligula. Aliquam dapibus dui efficitur odio pellentesque, vel hendrerit magna bibendum. Donec porttitor sit amet risus pretium porta. Morbi pellentesque ex et sem sollicitudin, non pretium nunc maximus. Nullam bibendum felis in auctor imperdiet.
+                                </p>
+                                <img src="img/cliente3.jpg" height="120">
+                                <p>
+                                    <h6>João</h6>
+                                </p>
+                                <p>
+                                    Desenvolvedor Software
+                                </p>
+                            </div>
+                           
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+		</div>
+		
+
+		<!-- Seção Onde Nós Encontrar !-->
+        <div id="ondeencontrar" class="container-fluid bg-ondeencontrar">
+            <div class="py-4">
+                <div class="container">
+                    <header class="col-12">
+                        <h2 class="text-center">Saiba onde nós encontrar
+                            <span class="underline"></span>
+                        </h2>
+                    </header>
+
+                    <div class="row py-4">
+                        <div class="localizacao">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.47153609355!2d-46.65982228502167!3d-23.58741618466994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sParque%20Ibirapuera!5e0!3m2!1spt-PT!2sbr!4v1601923267563!5m2!1spt-PT!2sbr" 
+                            width="1000" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+		</div>
+		
+		<!-- Seção Contato !-->
+        <div id="contato" class="container-fluid bg-contato">
+            <div class="py-4">
+                <section class="col-12">
+                    <h2 class="text-center">Contato
+                        <span class="underline"></span>
+                    </h2>
+                </section>
+                <div class="row py-2">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <form>
+                            <div class="form-group">
+                                <label for="nomeInput">Nome</label>
+                                <input type="nome" class="form-control" id="nomeInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="emailInput">E-mail</label>
+                                <input type="email" class="form-control" id="emailInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="assuntoInput">Assunto</label>
+                                <input type="text" class="form-control" id="assuntoInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagemInput">Mensagem</label>
+                                <textarea class="form-control" id="mensagemInput" rows="3"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+
+                        </form>
+                    </div>
+                    <div class="col-4"></div>
+                </div>
+            </div>
+		</div>
+		
+		<!-- Rodapé !-->
+		<div class="container-fluid bg-rodape">
+			<div class="container">
+
+			</div>
+		</div>
+		
+			
+			
+			
+			
+			
+			
+
+
+
+
+        <!-- Js Bootstrap !-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<!-- Latest compiled and minified Bootstrap JavaScript -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<!-- Popper -->
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+		integrity = "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+		crossorigin = "anonymous">
+		 </script>
+		 <script type="text/javascript">
+			$('.carousel').carousel({
+				interval: 2500
+			})
+		</script>
+		 
+    </body>
+
+</html>
+
+
+

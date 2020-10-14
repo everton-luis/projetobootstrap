@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Notebook Home Store</title>
+        <!-- CSS Bootstrap !-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<script type="text/javascript" src="js/jquery-min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- CSS Personalizada !-->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <!-- Fonte par Icones !-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		
+
+		<script type="text/javascript">
+			/// some script
+			
+			// jquery ready start
+			$(document).ready(function() {
+				// jQuery code
+			
+				///////////////// fixed menu on scroll for desctop
+				if ($(window).width() > 992) {
+					
+					var navbar_height =  $('.navbar').outerHeight();
+			
+					$(window).scroll(function(){  
+						if ($(this).scrollTop() > 150) {
+							 
+							 $('#navbar_top').addClass("fixed-top");
+							 $('#navbar_top').addClass("bg-secondary");
+							 $("#navbar_top").attr('style',  'height:70px');
+							 $('#section1').attr("css", { backgroundColor: "gray" });
+							 
+			
+							 
+						}else{
+							$('#navbar_top').removeClass("fixed-top");
+							$('.navbar-wrap').css('height', 'auto');
+							$('#navbar_top').removeClass("bg-secondary");
+						}   
+					});
+				} // end if
+			
+				
+			}); // jquery end
+			</script>
+
+			
+			<style type="text/css">
+			
+			.fixed-top.navbar{ padding:0px;  }
+			
+			
+			</style>
+
+    </head>
+    <body>
+
+        
+		
+        <h1>Teste</h1>
+
+        
+        <!-- Seção Onde Nós Encontrar !-->
+        <div id="ondeencontrar" class="container-fluid bg-ondeencontrar">
+            <div class="py-4">
+                <div class="container">
+                    <header class="col-12">
+                        <h2 class="text-center">Saiba onde nós encontrar
+                            <span class="underline"></span>
+                        </h2>
+                    </header>
+
+                    <div class="row py-4">
+                        <div class="localizacao">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.47153609355!2d-46.65982228502167!3d-23.58741618466994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f1069d11d1%3A0xcb936109af9ce541!2sParque%20Ibirapuera!5e0!3m2!1spt-PT!2sbr!4v1601923267563!5m2!1spt-PT!2sbr" 
+                            width="1000" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+	
+		
+
+		
+		
+			
+			
+			
+			
+			
+			
+
+
+
+
+        <!-- Js Bootstrap !-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<!-- Latest compiled and minified Bootstrap JavaScript -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<!-- Popper -->
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+		integrity = "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+		crossorigin = "anonymous">
+		 </script>
+		 <script type="text/javascript">
+			$('.carousel').carousel({
+				interval: 2500
+			})
+
+        </script>
+        
+    
+		 
+    </body>
+
+</html>
+
+
+
